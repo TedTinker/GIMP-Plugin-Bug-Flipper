@@ -1,6 +1,6 @@
 # A freeware plugin by Diego Nassetti for color/white balance. Put it in the plugins folder.
 # This is used by the BugFlipper plugin automatically. Nothing else is required.
-# My obly adjustment to this program was changing where it appears in the menus.
+# My only adjustment to this program was changing where it appears in the menus.
 
 '''
 
