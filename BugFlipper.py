@@ -1,5 +1,4 @@
-# A freeware plugin by Ted Tinker for the zoologists of Cheadle Center, UCSB.
-# This freeware plugin by Ted Tinker was made for the zoologists of UCSB's Cheadle Center
+# A freeware plugin made by Ted Tinker for the zoologists of Cheadle Center, UCSB
 # to aid human-assisted-image-processing of entomological specimens. 
 
 # To use this plugin, put it in the plugins folder of GIMP 2.6.11.
