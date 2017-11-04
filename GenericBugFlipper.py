@@ -7,11 +7,11 @@ This utylizes a WhiteBalanceStretch freeware plugin from Diego Nassetti.
 
 Once installed, Bug-Flipper appears in the GIMP menus under Filters.
 Click it, and a dialog-box prompts the user for two folders and some options.
-The program will open certain images in the first folder. It can rotate the image in increments of 90 degrees,
-color correct it, display it for more editing, and open another dialog prompt requesting a name.
-If possible, rename the image using the scanner gun on the QR code displayed in the image.
-If the photo is so blurry it's difficult to read the labels, mark the checkbox to prepend "bad_pic_" to the filename.
-Then the image is saved with that filename in the second folder with the desired compression level. 
+The program will open specified images in the first folder. It can rotate each image in increments of 90 degrees,
+color correct them, display them for more editing, and open new dialog prompts requesting new filenames.
+If possible, rename each image using the scanner gun on the QR code displayed in the image.
+If a photo is so blurry it's difficult to read the labels, mark the checkbox to prepend "bad_pic_" to the filename.
+Then each image is saved with their new filename in the second folder with the desired compression level. 
  
  ----------------------------------------------------------------
  COPYRIGHT NOTICE
@@ -82,8 +82,8 @@ def getText(file):					# Brings up dialog box for renaming
 	dialog.destroy()
 	return "bad_pic_" + text
 
-    dialog.destroy() 			# Return filename
-    return text
+    dialog.destroy() 			
+    return text				# Otherwise just return
 
 #####
 
