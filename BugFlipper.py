@@ -132,7 +132,7 @@ register(
 	(PF_BOOL, "renameMe", "Rename/Edit photos?", 1),
 	(PF_BOOL, "rotateMe", "Rotate photos 180 degrees?", 1),
 	(PF_BOOL, "correctMe", "Run white-balance/color-correction?", 1),
-	(PF_BOOL, "deleteOld", "Delete old photos after processing?", 0),
+	(PF_BOOL, "deleteOld", "Delete old photos after processing?", 1),
 	(PF_SLIDER, "imageQuality", "Saved Image Quality:", .3,(.01,1,.01))
     ],
     [],								# Method Return
