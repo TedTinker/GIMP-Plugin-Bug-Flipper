@@ -110,7 +110,7 @@ def PrepareImage(file,OldDir,NewDir,renameMe,rotateMe,correctMe,imageQuality):		
 	if(renameMe):
 		display = pdb.gimp_display_new(image)						# Displays the photo
 		newFileName = getText(file) 							# Asks user for new filename
-	pdb.file_jpeg_save(image, drawable,NewDir+"/"+newFileName,NewDir+"/"+newFileName,
+	pdb.file_jpeg_save(image, drawable,NewDir+"/"+newFileName+".jpg",NewDir+"/"+newFileName +".jpg",
 		imageQuality, 0,0,0,"newFileName",0,1,0,0)					# Save in second folder with new name and quality
 	if(renameMe):	
 		pdb.gimp_display_delete(display)						# Remove display
@@ -118,13 +118,13 @@ def PrepareImage(file,OldDir,NewDir,renameMe,rotateMe,correctMe,imageQuality):		
 #####
 
 register(
-   	"Bug-Flipper-Generic",					# Name
+   	"Generic-Bug-Flipper",					# Name
    	"Made by Ted Tinker for Cheadle Center's zoologists",	# Blurb
    	"Made by Ted Tinker for Cheadle Center's zoologists for human-assisted-image-processing of standardized insect photos.",	# Help
 	"Ted Tinker",						# Author
 	"Ted Tinker, freeware",					# Copywrite
     	"2017",							# Date
-    	"Bug-Flipper-Generic",					# Display Name
+    	"Generic-Bug-Flipper",					# Display Name
     	"",      						# No picture required
     [								# Method Parameters
 	(PF_DIRNAME, "OldDir", "Folder with photos:","C:\\"),		# First Folder; replace C:\\ with default
