@@ -1,10 +1,7 @@
-
 '''
 A freeware plugin made by Ted Tinker for the zoologists of UCSB's Cheadle Center
 to aid human-assisted-image-processing of entomological specimens. 
-
 This utylizes a WhiteBalanceStretch freeware plugin from Diego Nassetti.
-
 Once installed, Bug-Flipper appears in the GIMP menus under Filters.
 Click it, and a dialog-box prompts the user for two folders and some options.
 The program will open certain images in the first folder. It can rotate the image 180 degrees,
@@ -111,7 +108,7 @@ def PrepareImage(file,OldDir,NewDir,renameMe,rotateMe,correctMe,imageQuality):		
 		newFileName = getText(file) 							# Asks user for new filename
 	pdb.file_jpeg_save(image, drawable,NewDir+"/"+newFileName,NewDir+"/"+newFileName,
 		imageQuality, 0,0,0,"newFileName",0,1,0,0)					# Save in second folder with new name and quality
-	if(renameMe or cropMe):	
+	if(renameMe):	
 		pdb.gimp_display_delete(display)						# Remove display
 
 #####
