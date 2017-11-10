@@ -77,11 +77,10 @@ def getText(file):
     
     if(text == ""):			# If the dialog is returned empty, use old file name
 	text = file
-
+    else:				# Otherwise, make sure to append .jpg
+	text = text + ".jpg"
     if(checkBlurry.get_active()):	# If flagged, start filename with "bad_pic_"
-	dialog.destroy()
-	return "bad_pic_" + text
-
+	text = "bad_pic_" + text
     dialog.destroy() 			# Otherwise, return filename
     return text
 
@@ -110,7 +109,7 @@ def PrepareImage(file,OldDir,NewDir,renameMe,rotateMe,correctMe,imageQuality):		
 	if(renameMe):
 		display = pdb.gimp_display_new(image)						# Displays the photo
 		newFileName = getText(file) 							# Asks user for new filename
-	pdb.file_jpeg_save(image, drawable,NewDir+"/"+newFileName+".jpg",NewDir+"/"+newFileName +".jpg",
+	pdb.file_jpeg_save(image, drawable,NewDir+"/"+newFileName,NewDir+"/"+newFileName,
 		imageQuality, 0,0,0,"newFileName",0,1,0,0)					# Save in second folder with new name and quality
 	if(renameMe or cropMe):	
 		pdb.gimp_display_delete(display)						# Remove display
