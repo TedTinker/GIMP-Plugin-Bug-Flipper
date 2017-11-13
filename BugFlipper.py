@@ -123,8 +123,8 @@ register(
     	"Bug-Flipper",						# Display Name
     	"",      						# No picture required
     [
-	(PF_DIRNAME, "OldDir", "Folder with photos:","C:\\"),	# Method Parameters
-	(PF_DIRNAME, "NewDir", "Folder to save photos:", "C:\\"),
+	(PF_DIRNAME, "OldDir", "Folder with photos:","/Users/herbarium/Desktop/insect-images-for-processing"),	# Method Parameters
+	(PF_DIRNAME, "NewDir", "Folder to save photos:", "/Users/katjaseltmann/Public/insect-images-processing/flipped"),
 	(PF_BOOL, "renameMe", "Rename/Edit photos?", 1),
 	(PF_BOOL, "rotateMe", "Rotate photos 180 degrees?", 1),
 	(PF_BOOL, "correctMe", "Run white-balance/color-correction?", 1),
