@@ -70,15 +70,13 @@ def getText(file):
     dialog.show_all()
 
     dialog.run()
-    text = entry.get_text()
+    text = entry.get_text() + ".jpg"
     
-    if(text == ""):			# If the dialog is returned empty, use old file name
+    if(text == ".jpg"):			# If the dialog is returned empty, use old file name
 	text = file
-    else:				# Otherwise, make sure to append .jpg
-	text = text + ".jpg"
     if(checkBlurry.get_active()):	# If flagged, start filename with "bad_pic_"
 	text = "bad_pic_" + text
-    dialog.destroy() 			# Otherwise, return filename
+    dialog.destroy() 			# Destroy and return filename
     return text
 
 #####
