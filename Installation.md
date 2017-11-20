@@ -1,4 +1,4 @@
-The plug-in Bug-Flipper should function on any operating system which can run its required components, but has been written and tested specifically in Windows 7 and Sierra. The installation process for Windows follows (more recent versions of Python and the GIMP may be used with semi-reliability):
+The plug-in Bug-Flipper should function on any operating system which can run its required components, but has been written and tested specifically in Windows 7, 10 and Sierra. The installation process for Windows follows (more recent versions of Python and the GIMP may be used with semi-reliability):
 
 Download and install Python version 2.6.6 (32 bit). Restart the computer.
 
