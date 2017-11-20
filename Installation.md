@@ -13,5 +13,7 @@ Open the GIMP (the first opening of the GIMP may take some time as it loads font
 The installation process for Windows and Linux should be similar.
 
 https://www.python.org/download/releases/2.6.6/
+
 http://www.pygtk.org/downloads.html
+
 https://www.gimp.org/downloads/
