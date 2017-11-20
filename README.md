@@ -1,6 +1,22 @@
 # GIMP-Plugin-Bug-Flipper
 A Python-fu plug-in for the GIMP, for human-assisted-image-processing at UCSB's Cheadle Center.
-GenericBugFlipper is similar, but with new options and different defaults for more general usage. 
+GenericBugFlipper is similar, but with new options and different defaults for more general usage.
+
+
+ ----------------------------------------------------------------
+ COPYRIGHT NOTICE
+ ----------------------------------------------------------------
+ 
+ This program is free software. You can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation either version 3 of the License, or
+ (at your option) any later version.  
+ 
+ View the GNU General Public License version 3 at the web site 
+ http://www.gnu.org/licenses/gpl-3.0.html
+ Alternatively you can write to the Free Software Foundation, Inc., 675 Mass
+ Ave, Cambridge, MA 02139, USA.
+ ---------------------------------------------------------------
 
 Both versions of the plug-in prompt the user for two folders: one full of images to be processed, another for saving the processed images.
 (There's no reason they can't be the same folder. You may modify the default pathnames in the registry function to save time.)
